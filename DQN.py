@@ -14,6 +14,7 @@ class DQN:
         self.state = self.env.reset()
         self.experience = []
         self.epsilon = .75
+        self.gamma = .5
         #self.action_space = self.env.action_space
         
     def select_action(self):
